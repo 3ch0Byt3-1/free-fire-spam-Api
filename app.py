@@ -75,7 +75,7 @@ def worker():
 
         for token in tokens[:110]:
             send_friend_request(uid, token, url, results)
-            time.sleep(1)  # 2-second delay per request
+            time.sleep(0)  # 2-second delay per request
 
         task['results'] = results
         task['done'] = True
